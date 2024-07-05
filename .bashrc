@@ -49,6 +49,13 @@ alias ml4w='~/dotfiles/apps/ML4W_Welcome-x86_64.AppImage'
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
+# -----------------------
+# RUST
+# -----------------------
+
+export RUST_ROOT=$HOME/.cargo
+export PATH=$PATH:$RUST_ROOT:$RUST_ROOT/bin
+
 # -----------------------------------------------------
 # Window Managers
 # -----------------------------------------------------
@@ -146,3 +153,4 @@ else
         echo "Start Hyprland with command Hyprland"
     fi
 fi
+. "$HOME/.cargo/env"
